@@ -4,6 +4,13 @@ body {
     text-align: center;
 }
 
+img
+{
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+}
+
 html {
   text-align: center;
 }
