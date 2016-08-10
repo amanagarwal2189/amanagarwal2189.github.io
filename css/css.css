@@ -265,3 +265,9 @@ fieldset[disabled] .btn-primary.active {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
 }
+
+#page-break {
+    border-color: #777B79;
+    border-width: 1px;
+    max-width: 85%;
+}
