@@ -271,3 +271,65 @@ fieldset[disabled] .btn-primary.active {
     border-width: 1px;
     max-width: 85%;
 }
+
+
+
+.project-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.project-box .project-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(240,95,64,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.project-box .project-box-caption .project-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.project-box .project-box-caption .project-box-caption-content .project-category,
+.project-box .project-box-caption .project-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.project-box .project-box-caption .project-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project-box .project-box-caption .project-box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.project-box:hover .project-box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .project-box .project-box-caption .project-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .project-box .project-box-caption .project-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
